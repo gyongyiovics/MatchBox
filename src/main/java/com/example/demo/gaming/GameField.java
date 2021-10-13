@@ -14,12 +14,12 @@ public class GameField {
         int matches = GameHelper.random(4, 40);
 
         do {
-            System.out.println("Matches on the table: " + matches);
-            System.out.println("Take 1-3 matches!");
-            int playerMatches = scanner.nextInt();
+            System.out.println("Matches on the table: " + matches); // -> p
+            System.out.println("Take 1-3 matches!"); // -> p
+            int playerMatches = scanner.nextInt(); // -> form
             matches -= playerMatches;
 
-            if(matches == 1) {
+            if(matches == 1) { // -> p
                 System.out.println("You won!");
                 break;
             }

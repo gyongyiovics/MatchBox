@@ -14,6 +14,7 @@ public class Simulation {
         this.computers = computers;
     }
 
+    //TODO: computer plays with computer
     public void run() {
         //add logic...
     }
