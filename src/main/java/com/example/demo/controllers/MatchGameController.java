@@ -5,8 +5,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class MatchGameController {
-    @GetMapping(value = "/play")
+
+    @GetMapping(value = "/game")
     public String getGamePage() {
+        return "game";
+    }
+
+    @GetMapping(value = "/play")
+    public String getPlayPage() {
+        //TODO: logic here --> call service
         return "play";
     }
 

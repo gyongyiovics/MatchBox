@@ -10,8 +10,5 @@ public class StaticController {
         return "index";
     }
 
-    @GetMapping(value = "/game")
-    public String getGamePage() {
-        return "game";
-    }
+
 }

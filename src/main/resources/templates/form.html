@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Match Game</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="page">
+            <div id="header">MATCHBOX</div>
+
+            <div id="menu">
+                <a href=""></a>
+                <!--<a data-th-href="@{/home}">Főoldal</a>-->
+            </div>
+
+            <div>
+                <form action="#" th:action="@{/form}" method="post" data-th-object="${myForm}">
+                    <label>
+                        Pull matches between 1 and 3:
+                    </label>
+                    <label>
+                        <input type="text" data-th-field="*{number}">
+                    </label><br>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+
+            <div>
+                <p class="match_num" data-th-text="${programNumber}"></p>
+                <p data-th-text="${winner}"></p>
+            </div>
+
+            <div>
+                <p class="string_text" data-th-text="${stringText}"></p>
+            </div>
+        </div>
+    </body>
+</html>
