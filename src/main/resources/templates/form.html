@@ -10,8 +10,9 @@
             <div id="header">MATCHBOX</div>
 
             <div id="menu">
-                <a href=""></a>
-                <!--<a data-th-href="@{/home}">Főoldal</a>-->
+                <a data-th-href="@{/home}">Főoldal</a>
+				<a data-th-href="@{/form}">Game</a>
+				
             </div>
 
             <div>
@@ -20,7 +21,7 @@
                         Pull matches between 1 and 3:
                     </label>
                     <label>
-                        <input type="text" data-th-field="*{number}">
+                        <input type="text" data-th-field="*{enteredNumber}">
                     </label><br>
 
                     <button type="submit">Send</button>

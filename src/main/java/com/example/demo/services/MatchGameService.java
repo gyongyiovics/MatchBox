@@ -14,6 +14,8 @@ public class MatchGameService {
     }
 
     //TODO: logic here
+    //public String
+    
     public String getWinnerMsg(int userNum, int progNum) {
         if(userNum > progNum) {
             return "Te nyertél!";
@@ -22,8 +24,6 @@ public class MatchGameService {
         }
         return "Döntetlen!";
     }
-
-
 
     public int random(int min, int max) {
         return (int) (Math.random() * max + min);
